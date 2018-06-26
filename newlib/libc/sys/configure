@@ -798,6 +798,7 @@ mmixware
 netware
 or1k
 phoenix
+ppu
 rdos
 rtems
 sh
@@ -11462,7 +11463,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<_LT_EOF
-#line 11465 "configure"
+#line 11466 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -11568,7 +11569,7 @@ else
   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
   lt_status=$lt_dlunknown
   cat > conftest.$ac_ext <<_LT_EOF
-#line 11571 "configure"
+#line 11572 "configure"
 #include "confdefs.h"
 
 #if HAVE_DLFCN_H
@@ -11836,6 +11837,8 @@ subdirs="$subdirs a29khif"
 	or1k) subdirs="$subdirs or1k"
  ;;
 	phoenix) subdirs="$subdirs phoenix"
+ ;;
+	ppu) subdirs="$subdirs ppu"
  ;;
 	rdos) subdirs="$subdirs rdos"
  ;;

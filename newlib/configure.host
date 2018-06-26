@@ -388,6 +388,11 @@ esac
 # THIS TABLE IS ALPHA SORTED.  KEEP IT THAT WAY.
 
 case "${host}" in
+  *-*-ppu*)
+	newlib_cflags="${newlib_cflags} -DMALLOC_ALIGNMENT=16 -DSMALL_MEMORY -ffunction-sections -fdata-sections"
+	sys_dir=ppu
+	have_crt0="no"
+	;;
   *-*-cygwin*)
 	posix_dir=posix
 	stdio64_dir=stdio64

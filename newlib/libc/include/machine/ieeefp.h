@@ -282,6 +282,10 @@
 #endif
 #endif
 
+#ifdef __ppu__
+#define __IEEE_BIG_ENDIAN
+#endif
+
 #ifdef __PPC__
 #if (defined(_BIG_ENDIAN) && _BIG_ENDIAN) || (defined(_AIX) && _AIX)
 #define __IEEE_BIG_ENDIAN
