@@ -9,10 +9,10 @@ export PATH="$prefix/bin:$PATH"
 export C_INCLUDE_PATH=""
 export CPLUS_INCLUDE_PATH=""
 export CPATH=""
-export CPATH="$prefix/lib/gcc/$target/4.9.4/include:$CPATH"
-export CPATH="$prefix/lib/gcc/$target/4.9.4/include-fixed:$CPATH"
+export CPATH="$prefix/lib/gcc/$target/8.1.0/include:$CPATH"
+export CPATH="$prefix/lib/gcc/$target/8.1.0/include-fixed:$CPATH"
 
-newlib_options="--disable-multilib"
+newlib_options="--disable-multilib --enable-target-optspace"
 
 CFLAGS="-ffunction-sections"
 
